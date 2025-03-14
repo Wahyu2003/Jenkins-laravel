@@ -15,8 +15,8 @@ node {
     }
     // Deploy (simulasi ke direktori lain, bisa diganti atau dihapus)
     stage("Deploy") {
-        sh 'mkdir -p /home/hafidwahyudi/laravel-deploy'
-        sh 'cp -r ./ /home/hafidwahyudi/laravel-deploy/'
-        sh 'rm -rf /home/hafidwahyudi/laravel-deploy/.git'
+        sh 'mkdir -p /home/hafidwahyudi/jenkins-copy/laravel-deploy'
+        sh 'cp -r ./ /home/hafidwahyudi/jenkins-copy/laravel-deploy/'
+        sh 'rm -rf /home/hafidwahyudi/jenkins-copy/laravel-deploy/.git'
     }
 }
